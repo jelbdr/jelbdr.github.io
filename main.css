@@ -208,9 +208,21 @@ h3.montserrat {
 
 .work-experience .card {
     width: 80%;
-    top: 20%;
+    top: 10%;
     margin: auto;
     right: 10%;
+}
+
+.work-experience .row {
+    display: flex;
+}
+
+.work-experience .column {
+    width: 50%;
+}
+
+.work-experience li {
+    font-size: 14px;
 }
 
 .reference img {
@@ -310,13 +322,17 @@ h3.montserrat {
 
     .work-experience .card {
         width: 90%;
-        top: 10%;
+        top: auto;
         margin: auto;
         right: 5%;
     }
 
     .work-experience .container {
         padding: 25px;
+    }
+
+    .work-experience .row {
+        display: block;
     }
 
     .portfolio {
@@ -385,7 +401,11 @@ h3.montserrat {
 }
 
 
-ul {
+ul.dev {
+    padding: 0px 20px;
+}
+
+ul.links {
     padding: 0px;
     list-style: none;
     display: flex;
