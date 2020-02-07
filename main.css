@@ -12,6 +12,14 @@
     font-size: 2.5rem;
 }
 
+.purple-text {
+    color: #642B73;
+}
+
+.pink-text {
+    color: #C6426E;
+}
+
 h1.oswald {
   color: #C6426E;
   text-transform: uppercase;
@@ -28,6 +36,11 @@ h2.typewriter {
     animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
+}
+
+h3.montserrat {
+    letter-spacing: .10rem;
+    margin: 0px 0px 5px;
 }
 
 /* The typing effect */
@@ -50,6 +63,10 @@ h2.typewriter {
     height: 100%
 }
 
+.h100vh {
+    height: 100vh;
+}
+
 .is-vcentered {
     display: flex;
     align-items: center;
@@ -65,6 +82,55 @@ h2.typewriter {
     text-align: center;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.is-absolute {
+    position: absolute;
+}
+
+.is-relative {
+    position: relative;
+}
+
+.h80vh {
+    height: 80vh;
+
+    @media only screen and (max-width: 780px) {
+        height: 100%;
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+.m-0 {
+    margin: 0px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.bg-gradient {
+    background: -webkit-linear-gradient(150deg, #C6426E, #642B73);
+    opacity: 75%;
+}
+
+.bg-light {
+    background-color: #F6F6F6;
+}
+
+.px-5 {
+    padding: 0px 50px;
+}
+
+.py-5 {
+    padding: 50px 0px;
+}
+
 .btn {
     
     width: 200px;
@@ -72,9 +138,9 @@ h2.typewriter {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    color: #000;
+    color: #fff;
     border: 1px solid #642B73;
-    background-color: #fff;
+    background-color: #642B73;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
@@ -82,9 +148,9 @@ h2.typewriter {
 }
 
 .btn:hover {
-  background-color: #642B73;
+  background-color: #fff;
   box-shadow: 0px 15px 20px #d8d8d8;
-  color: #fff;
+  color: #000;
   transform: translateY(-5px);
 }
 
@@ -93,9 +159,15 @@ h2.typewriter {
   background-color: transparent;
 }
 
+.banner .grid-container {
+    grid-template-columns: 8% 47% 45%;
+}
+
 .about-me .grid-container {
   grid-template-columns: 30% 40% 30%;
-  padding: 10px;
+  padding: 100px 0px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .portfolio .grid-container {
@@ -108,11 +180,208 @@ h2.typewriter {
 }
 
 .reference .grid-container {
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 50% 50%;
 }
 
 .more-info .grid-container {
   grid-template-columns: 50% 50%;
+}
+
+.banner .text-content {
+    padding-right: 70px;
+}
+
+.about-me .progress {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: -webkit-right;
+}
+
+.about-me .progress p {
+    margin: 0px 0px 10px;
+}
+
+.about-me .skills .is-vcentered {
+    margin: 10px 0px;
+}
+
+.work-experience .card {
+    width: 80%;
+    top: 20%;
+    margin: auto;
+    right: 10%;
+}
+
+.reference img {
+    height: 65px;
+    margin: 10px 0px 15px;
+    width: 65px;
+    border-radius: 50%;
+}
+
+.reference p {
+    /*font-size: 14px;*/
+     margin: 5px 0px;
+}
+
+.reference .column {
+    padding: 10px 15px 0px;
+}
+
+.reference .content {
+    right: 10%;
+    width: 50%;
+}
+
+.more-info .image-holder {
+    height: 400px;
+}
+
+.more-info img.main {
+    z-index: 1;
+    left: 35%;
+    height: 350px;
+}
+
+.more-info img.stripe {
+    top: -2%;
+    left: 48%;
+    height: 325px;
+}
+
+.more-info img.oval {
+    left: 32%;
+    top: 13%;
+    height: 300px;
+}
+
+@media only screen and (max-width: 780px) {
+    .banner .grid-container {
+        grid-template-columns: 0% 100% 100%;
+        text-align: center;
+    }
+    
+    .banner .content-column {
+        position: absolute;
+        height: 80%;
+        left: 5%;
+        top: 10%;
+        margin: auto 0;
+        width: 90%;
+        z-index: 1;
+        background: white;
+    }
+
+    .banner .text-content {
+        padding: 0px 50px;
+    }   
+
+        /* Safari 6.1+ */
+    div.skills   {-webkit-order: 3;}
+    div.progress  {-webkit-order: 2;}
+    div.description {-webkit-order: 1;}
+
+    /* Standard syntax */
+    div.skills   {order: 3;}
+    div.progress  {order: 2;}
+    div.description {order: 1;}
+
+    .about-me .grid-container {
+      grid-template-columns: none;
+      padding: 0px;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .about-me .progress {
+       justify-content: center;
+       text-align: center;
+       padding: 0px; 
+    }
+
+    .about-me .skills div {
+        width: 85%;
+    }
+
+    .about-me .skills .is-vcentered {
+        margin: auto;
+    }
+
+    .work-experience .card {
+        width: 90%;
+        top: 10%;
+        margin: auto;
+        right: 5%;
+    }
+
+    .work-experience .container {
+        padding: 25px;
+    }
+
+    .portfolio {
+        height: 100%;
+    }
+
+    .portfolio .grid-container {
+        grid-template-columns: none;
+        padding: 50px 0px 0px;
+    }
+
+    .portfolio .overlay {
+        display: none;
+    }
+    
+    .reference .grid-container {
+        grid-template-columns: 0% 100%;
+    }
+
+    .reference .d-flex {
+        display: block;
+    }
+
+    .reference .content  {
+        position: relative;
+        width: 90%;
+        margin: auto;
+        right: 0%
+    }
+
+    .more-info .grid-container {
+      grid-template-columns: 100% 100%;
+      display: block;
+    }
+    
+    .more-info {
+        height: 100%;
+        padding-top: 50px;
+    }
+
+    .more-info .info-photo {
+        justify-content: center;
+    }
+
+    .more-info img.main {
+        left: 0px;
+        height: 250px;
+    }
+
+    .more-info img.stripe {
+        top: -2%;
+        left: 20%;
+        height: 225px;
+    }
+    
+    .more-info .info-photo .image-holder {
+        height: 100%;
+       margin: 20px 0px;
+    }
+    
+    .more-info img.oval {
+        left: 1%;
+        top: 13%;
+        height: 200px;
+    }
 }
 
 
@@ -125,11 +394,11 @@ ul {
 }
 
 .icon {
-   margin-right: 5px;
+    margin-right: 5px;
     padding: 5px 10px;
     font-size: 14px;
     border-radius: 50%;
-    color: #642B73;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,8 +418,8 @@ ul {
 }
 
 .card {
-  /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background: white;
   transition: 0.3s;
 }
 
@@ -159,12 +428,10 @@ ul {
     padding: 50px;
 }
 
-/* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* Add some padding inside the card container */
 .container {
   padding: 50px;
 }
@@ -172,7 +439,7 @@ ul {
 .image {
   display: block;
   width: 100%;
-  height: 180px;
+  height: 200px;
 }
 
 .overlay {
@@ -215,10 +482,4 @@ progress[value]::-webkit-progress-value {
     background-size: cover;
 }
 
-.more-info img {
-    height: 300px;
-}
 
-.more-info img.main {
-    height: 325px;
-}

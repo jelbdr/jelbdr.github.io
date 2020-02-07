@@ -6,51 +6,52 @@
   <title>Jel Del Rosario | Web Developer</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Oswald:700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
-  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
-
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <section class="banner w-100" style="display: flex;">
-    <div style="width: 50%; display: flex; align-items: center;" >
-      <header style="margin: 0px 80px;">
-        <h2 class="montserrat typewriter" style="margin: 0px;">Hello World, I'm Jel.</h2>
-        <h1 class="oswald" style="margin: 0px; font-size: 2.5rem;">Front-end Web Developer</h1>
-        <p style="margin: 5px 0px 20px; font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis, excepturi, ipsa optio nobis, quis quae quia ut quod eos.</p>
-        <button class="btn" type="button" style="margin-top: 5px;">Download CSV</button>
-      </header>
-    </div>
-    <div style="position: relative; width: 50%; height: 100vh; overflow: hidden;"> 
-     
-      <div class="overlay" style="position: absolute; height: 100%; background: -webkit-linear-gradient(150deg, #C6426E, #642B73); opacity: 75%; top: 0%; width: 100%;"></div>
-      <div class="h-100" style="background: url('images/banner-photo.jpg') center center no-repeat; background-size: cover;">
+  <!-- main-banner -->
+  <section class="banner w-100 d-flex">
+    <div class="grid-container w-100 is-relative">
+      <div class="grid-item is-vhcentered offset">
       </div>
-
-    </div>
-  </section>
-  <section class="about-me is-vhcentered" style="height: 80vh; background: #F6F6F6;"> 
-    <div class="grid-container" style="padding: 100px 0px; width: 80%; margin: 0 auto;">
-      <div class="grid-item progress text-center"  style="display: flex; align-items: center; justify-content: flex-end; padding: 50px 0px; text-align: -webkit-right;">
-        <div>
-          <p style="margin: 0px 0px 10px;">Hello</p>
-          <progress max="100" value="80"></progress>
-          <p style="margin: 0px 0px 10px;">Hello</p>
-          <progress max="100" value="40"></progress>
-          <p style="margin: 0px 0px 10px;">Hello</p>
-          <progress max="100" value="80"></progress>
-          <p style="margin:0px 0px 10px;">Hello</p>
-          <progress max="100" value="95"></progress>
+      <div class="grid-ite content-column is-vhcentered">
+        <div class="text-content">
+          <h2 class="montserrat typewriter m-0">Hello World, I'm Jel.</h2>
+          <h1 class="oswald m-0">Front-end Web Developer</h1>
+          <p style="margin: 5px 0px;">An experienced web developer with a strong interest in projects that require both conceptual and analytical thinking. </p>
+          <button class="btn mt-2" target="_blank" type="button">Download CSV</button>        
         </div>
       </div>
-      <div class="grid-item description" style="padding: 50px 0px; font-size: 14px;">
-        <div style="position: relative; height: 170px;">
-          <img src="images/me.jpg" style="position: absolute; height: 150px; width: 150px; border-radius: 50%; z-index: 2; left: 35%">
-          <img src="images/intersection.png" style="height: 200px; position: absolute; z-index: 1; bottom: 0%; left: 26%;">
-          <img src="images/path.png" style="height: 170px; position: absolute; left: 40%; right: auto; z-index: 0;">
+      <div class="grid-item is-relative h100vh">
+        <div class="overlay h-100 is-absolute bg-gradient w-100"></div>
+        <div class="h-100" style="background: url('images/banner-photo.jpg') center center no-repeat; background-size: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-me is-vhcentered bg-light"> 
+    <div class="grid-container">
+      <div class="grid-item progress text-center py-5">
+        <div>
+          <p>HTML CSS JS JQUERY</p>
+          <progress max="100" value="85"></progress>
+          <p>Responsive Website</p>
+          <progress max="100" value="83"></progress>
+          <p>Back-end Integration</p>
+          <progress max="100" value="60"></progress>
+          <p>Web Design</p>
+          <progress max="100" value="75"></progress>
+        </div>
+      </div>
+      <div class="grid-item description py-5" style="font-size: 14px;">
+        <div class="is-vhcentered is-relative" style="height: 170px;">
+          <img src="images/me.jpg" style="height: 150px; width: 150px; border-radius: 50%; z-index: 2;">
+          <img class="is-absolute" src="images/intersection.png" style="height: 200px; z-index: 1; bottom: -10%; left: 20%;">
+          <img class="is-absolute" src="images/path.png" style="height: 170px; position: absolute; left: 35%; right: auto; z-index: 0;">
 
         </div>
         <div style="width: 90; margin: auto;">
-          <p class="text-center" style="padding: 20px 50px 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus eum explicabo reiciendis, eligendi odit sapiente deleniti</p>
+          <p class="text-center" style="padding: 20px 50px 10px;">I am a self-learner and </p>
           <ul>
             <li class="is-vcentered">
               <!-- <span class="icon"><i class="fab fa-linkedin-in"></i></span> -->
@@ -68,126 +69,151 @@
           </ul>
         </div>
       </div>
-      <div class="grid-item skills is-vhcentered" style="padding: 50px 0px">
+      <div class="grid-item skills is-vhcentered py-5">
         <div>
-          <div class="is-vhcentered" style="margin: 10px 0px;">  
+          <div class="is-vcentered">  
             <img src="images/web-development.png">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ipsum voluptates odit, consequatur soluta, </p>
+            <div>
+              <!-- <h5 class="m-0">Web Development </h5> -->
+              <p class="m-0">HTML5, CSS, JS JQUERY LARAVEL VUEJS</p>
+              <p class="m-0">Bootstrap, Bulma, Material Design</p>
+            </div>
+
           </div>
-          <div class="is-vhcentered" style="margin: 10px 0px;"> 
+          <div class="is-vcentered"> 
             <img src="images/illustration.png">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ipsum voluptates odit, consequatur soluta, </p>
+            <p>Adobe XD, Adobe Photoshop</p>
           </div>
-          <div class="is-vhcentered" style="margin: 10px 0px;"> 
+          <div class="is-vcentered"> 
             <img src="images/maintenance.png">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ipsum voluptates odit, consequatur soluta, </p>
+            <p>Forge, MYSQL, Git, Wordpress, Sublimer Merge, ConEmu, Putty</p>
           </div>
-          <div class="is-vhcentered" style="margin: 10px 0px;"> 
+          <div class="is-vcentered"> 
             <img src="images/ui.png">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ipsum voluptates odit, consequatur soluta, </p>
+            <p>Quality Assurance, Content Management and Customer Support</p>
           </div>
         </div>  
       </div>
     </div>
   </section>
-  <section class="work-experience" style="position: relative; height: 100vh; background: #F6F6F6;">
+  <section class="work-experience is-relative h100vh bg-light">
     <div style="background: url('images/experience.jpg') no-repeat center center; background-size: cover; height: 60vh;">   
     </div>
-    <div class="overlay" style="position: absolute; height: 60vh; background: -webkit-linear-gradient(150deg, #C6426E, #642B73); opacity: 85%; top: 0%; width: 100%;"></div>
-
-    <div class="card" style="position: absolute;background-color: white; width: 80%; top: 20%; margin: auto; right: 10%;">
+    <div class="overlay is-absolute bg-gradient w-100" style="height: 60vh;"></div>
+    <div class="card is-absolute">
       <div class="container">
-      <h1 class="oswald">Work Experience</h1>
-      <h3 class="montserrat">Front-End Web Developer at MagisSolutions, Inc.</h3>
+        <h1 class="oswald">Work Experience</h1>
+        <h3 class="montserrat">Front-End Web Developer at MagisSolutions, Inc.</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa error quae, laborum debitis iste sint magnam sunt consectetur fugit iusto molestiae totam tenetur quisquam voluptatum aspernatur placeat. Earum, laborum, repellendus.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore corporis nisi repellendus distinctio sunt et nam ex eum, reiciendis corrupti delectus, reprehenderit consectetur totam repellat iusto perspiciatis porro doloremque, deleniti!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod natus asperiores excepturi dolore corrupti in reiciendis, ullam, ad commodi aspernatur quibusdam assumenda nihil saepe voluptatem porro inventore doloribus, at eaque.</p>
       </div>
     </div>
   </section>
-  <section class="portfolio" style="height: 80vh; width: 100%; background: #F6F6F6;">
+  <section class="portfolio bg-light w-100 h100vh">
     <div class="grid-container" style="width: 80%; margin: auto;">
-      <div class="grid-item" style="position: relative;">
+      <div class="grid-item is-relative">
         <img src="/images/banner-photo.jpg" alt="portfolio1" class="image">
         <div class="overlay">
-          <!-- <div class="text">Hello World</div> -->
         </div>
       </div>
-      <div class="grid-item" style="position: relative;">
+      <div class="grid-item is-relative">
         <img src="/images/banner-photo.jpg" alt="portfolio1" class="image">
         <div class="overlay">
-          <!-- <div class="text">Hello World</div> -->
+
         </div>
       </div>
-      <div class="grid-item" style="position: relative;">
+      <div class="grid-item is-relative">
         <img src="/images/banner-photo.jpg" alt="portfolio1" class="image">
         <div class="overlay">
-          <!-- <div class="text">Hello World</div> -->
         </div>
       </div>
-      <div class="grid-item" style="position: relative;">
+      <div class="grid-item is-relative">
         <img src="/images/banner-photo.jpg" alt="portfolio1" class="image">
         <div class="overlay">
-          <!-- <div class="text">Hello World</div> -->
         </div>
       </div>
     </div>
-    <div class="text-center" style="width: 60%; margin: auto; padding: 25px 0px;">
+    <div class="text-center py-5" style="width: 60%; margin: auto;">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos animi mollitia fuga aspernatur earum ipsam iure dolore fugit maxime voluptate. Animi a impedit vel eaque adipisci rem est dicta ullam.</p>
-
-      <button class="btn" type="button" style="margin-top: 5px;">More designs</button>
+      <button class="btn mt-2" type="button">More designs</button>
     </div>
   </section>
-  <section class="reference" style="height: 80vh; position: relative; background: #F6F6F6;">
-    <div class="grid-container h-100" style="position: relative;">
-      <div class="grid-item h-100">
-        <div class="overlay h-100" style="position: absolute; background: -webkit-linear-gradient(150deg, #C6426E, #642B73); opacity: 80%; top: 0%; width: 55%;">
-        </div>
+
+
+  <section class="reference is-relative bg-light h80vh">
+    <div class="grid-container h-100 is-relative">
+      <div class="grid-item h-100 is-relative">
         <div class="h-100" style="background: url('images/reference.jpg') center center no-repeat; background-size: cover;">
         </div>
+        <div class="overlay h-100 is-absolute bg-gradient w-100">
+        </div>
       </div>
-      <div class="grid-item h-100 is-vhcentered" style="position: absolute; right: 10%; width: 45%;">
+      <div class="grid-item content h-100 is-vhcentered is-absolute">
         <div class="card w-100">
-          <div class="card-content">
+          <div class="card-content text-center">
             <h1 class="oswald">Contact Reference</h1>
-            <p>
-              Lorem Ipusm Dolor
-              <br>
-              <span><i>Back-end Developer at MagisSolutions, Inc</i></span><br>
-              <span><i>Back-end Developer at MagisSolutions, Inc</i></span><br>
-              <span><i>Back-end Developer at MagisSolutions, Inc</i></span>
-            </p>
-            <p>
-              Lorem Ipusm Dolor
-              <br>
-              <span><i>Back-end Developer at MagisSolutions, Inc</i></span><br>
-              <span><i>Back-end Developer at MagisSolutions, Inc</i></span><br>
-              <span><i>Back-end Developer at MagisSolutions, Inc</i></span>
-            </p>
+            <div class="d-flex"> 
+              <div class="column">
+                <img src="images/banner-photo.jpg">
+                <div>              
+                  <h3 class="montserrat purple-text">Ana Vasquez</h3>
+                  <p>Back-end Developer at MagisSolutions, Inc.</p>
+                  <p>
+                    <i class="fab fa-linkedin-in pink-text"></i> analinkedin
+                    <br>
+                    <i class="far fa-envelope pink-text"></i> heyitsana@gmail.com  
+                  </p>
+                </div>
+              </div>
+              <div class="column">
+                <img src="images/banner-photo.jpg">
+                <div>              
+                  <h3 class="montserrat purple-text">Cris Anthony Barbosa</h3>
+                  <p>Back-end Developer at MagisSolutions, Inc.</p>
+                  <p>
+                    <i class="fab fa-linkedin-in pink-text"></i> analinkedin
+                    <br>
+                    <i class="far fa-envelope pink-text"></i> heyitsana@gmail.com  
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="more-info is-vhcentered" style="height: 90vh; background: #F6F6F6;">
+
+
+  <section class="more-info is-vhcentered bg-light h100vh">
     <div class="grid-container" style="width: 70%; margin: auto;">
-      <div class="grid-item">
+      <div class="grid-item info-content">
         <h1 class="oswald">Get to know me</h1>
+        <h4 class="m-0 purple-text">Educational Background</h4>
+        <p class="m-0">
+          Studied BSECE at Technological Institute of Philippines for 4years then transferred to Central Colleges of the Philippines where I graduated with the same course last 2015. 
+        </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur soluta libero repellendus dignissimos quo aspernatur rem suscipit laboriosam obcaecati. Unde vitae rerum beatae incidunt totam fugit perspiciatis hic excepturi accusantium.
+          Multitasker. Time Management. In the previous company I worked at, I was also the Admin Assistant. Also, aside from doing the current project, I have to do requests from previous ones. This taught the importance of time management, prioritizing and providing quality output on all ends.
           <br><br>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sunt enim deserunt hic esse impedit reprehenderit, suscipit vel quaerat. Beatae debitis dolor aspernatur, at suscipit similique inventore assumenda blanditiis aliquam!
+          Self-learner, Patience and Resourceful. A lot of things I've learned related to Web Developemnt, I learned it by researching, trying, failing and trying again.
+          <br>
+          I like mornings. Waking up early in the morning and going for a run.
+
         </p>
       </div>
-      <div class="grid-item" style="position: relative; display: flex; align-items: center;justify-content: flex-end;">
-          <img class="main" src="images/ab1" style="position: absolute; z-index: 1; height: 350px;">
-          <img src="images/ab2" style="position: absolute; top: -35%; left: 35%; height: 325px;">
-          <img  src="images/ab3" style="position: absolute; left: 25%; top: -5%; height: 300px;">
+      <div class="grid-item info-photo is-vcentered">
+        <div class="is-relative image-holder">
+          <img class="main is-relative" src="images/ab1">
+          <img class="stripe is-absolute" src="images/ab2">
+          <img class="oval is-absolute" src="images/ab3">
+        </div>
       </div>
     </div> 
     
   </section>
-  <footer style="height: 5vh; background: -webkit-linear-gradient(150deg, #C6426E, #642B73);">
+  <footer class="bg-gradient" style="height: 5vh;">
   </footer>
 </body>
 </html>
