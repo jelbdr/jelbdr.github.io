@@ -6,6 +6,7 @@
   <title>Jel Del Rosario | Web Developer</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Oswald:700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -14,29 +15,37 @@
     <div class="grid-container w-100 is-relative">
       <div class="grid-item is-vhcentered offset">
       </div>
-      <div class="grid-ite content-column is-vhcentered">
-        <div class="text-content">
+      <div class="grid-item content-column is-vhcentered">
+        <div class="text-content animated fadeInLeft">
           <h2 class="montserrat typewriter m-0">Hello World, I'm Jel.</h2>
-          <h1 class="oswald m-0">Front-end Web Developer</h1>
-          <p style="margin: 5px 0px;">An experienced web developer with a strong interest in projects that require both conceptual and analytical thinking. </p>
-          <button class="btn mt-2" target="_blank" type="button">Download CSV</button>        
+          <h1 class="oswald m-0 pink-text">Front-end Web Developer
+            <!-- <br>& Designer -->
+          </h1>
+          <p style="margin: 5px 0px;">An experienced web developer with a strong interest in projects that require both conceptual and analytical thinking.</p>
+          <a href="/files/coe.pdf" download="Jel Del Rosario">
+            <button class="btn mt-2" type="button">
+              Download CSV
+            </button>
+          </a>
         </div>
       </div>
       <div class="grid-item is-relative h100vh">
         <div class="overlay h-100 is-absolute bg-gradient w-100"></div>
-        <div class="h-100" style="background: url('images/banner-photo.jpg') center center no-repeat; background-size: cover;">
+        <div class="h-100" style="background: url('files/banner-photo.jpg') center center no-repeat; background-size: cover;">
         </div>
       </div>
     </div>
   </section>
-  <section class="about-me is-vhcentered bg-light"> 
+  
+  <!-- skills -->
+  <section class="about-me is-vhcentered h100vh"> 
     <div class="grid-container">
       <div class="grid-item progress text-center py-5">
-        <div>
-          <p>HTML CSS JS JQUERY</p>
+        <div class="animated fadeInLeft">
+          <p>HTML5 CSS3 JavaScript JQuery</p>
           <progress max="100" value="85"></progress>
           <p>Responsive Website</p>
-          <progress max="100" value="83"></progress>
+          <progress max="100" value="77"></progress>
           <p>Back-end Integration</p>
           <progress max="100" value="60"></progress>
           <p>Web Design</p>
@@ -45,72 +54,78 @@
       </div>
       <div class="grid-item description py-5" style="font-size: 14px;">
         <div class="is-vhcentered is-relative" style="height: 170px;">
-          <img src="images/me.jpg" style="height: 150px; width: 150px; border-radius: 50%; z-index: 2;">
-          <img class="is-absolute" src="images/intersection.png" style="height: 200px; z-index: 1; bottom: -10%; left: 20%;">
-          <img class="is-absolute" src="images/path.png" style="height: 170px; position: absolute; left: 35%; right: auto; z-index: 0;">
+          <img src="files/me.jpg" style="height: 150px; width: 150px; border-radius: 50%; z-index: 2;">
+          <img class="is-absolute" src="files/intersection.png" style="height: 200px; z-index: 1; bottom: -10%; left: 20%;">
+          <img class="is-absolute" src="files/path.png" style="height: 170px; position: absolute; left: 35%; right: auto; z-index: 0;">
 
         </div>
         <div style="width: 90; margin: auto;">
-          <p class="text-center" style="padding: 20px 50px 10px;">I am a self-learner and 
+          <p class="text-center" style="padding: 20px 50px;">Jel is thorough and precise in everything she does. She has a passion in developing innovative, user-friendly websites, enhancing user experience and maximizing user interface.
+ 
             <br>
-            Manila, PH
           </p>
           <ul class="links">
             <li class="is-vcentered">
-              <button class="btn icon" type="button">
-                <i class="fab fa-linkedin-in"></i>
-              </button>
+              <a href="https://www.linkedin.com/in/delrosariojelice/" style="display: flex;align-items: center;justify-content: flex-end;">
+                <button class="btn icon" type="button">
+                  <i class="fab fa-linkedin-in"></i>
+                </button>
+              </a>
               <span>delrosario.jelice</span>
             </li>
             <li class="is-vcentered">
-              <button class="btn icon" type="button">
-                <i class="far fa-envelope"></i>
-              </button>
+              <a href="mailto:jelbdr@gmail.com" style="display: flex;align-items: center;justify-content: flex-end;">
+                <button class="btn icon" type="button">
+                  <i class="far fa-envelope"></i>
+               </button>
+              </a>
               <span>jelbdr@gmail.com</span>
             </li>
           </ul>
         </div>
       </div>
-      <div class="grid-item skills is-vhcentered py-5">
+      <div class="grid-item skills is-vhcentered py-5 animated fadeInRight">
         <div>
           <div class="is-vcentered">  
-            <img src="images/web-development.png">
+            <img src="files/web-development.png">
             <div>
               <!-- <h5 class="m-0">Web Development </h5> -->
-              <p class="m-0">HTML5, CSS, JavaScript, JQuery, Laravel</p>
-              <p class="m-0">Bootstrap, Bulma, Material Design, VueJs</p>
+              <p class="m-0">HTML5, CSS, JavaScript, JQuery, Laravel,
+              Bootstrap, Bulma, Material Design, VueJs</p>
             </div>
 
           </div>
           <div class="is-vcentered"> 
-            <img src="images/illustration.png">
+            <img src="files/illustration.png">
             <p>Adobe XD, Adobe Photoshop</p>
           </div>
           <div class="is-vcentered"> 
-            <img src="images/maintenance.png">
+            <img src="files/maintenance.png">
             <p>Forge, MYSQL, Git, Wordpress, Sublimer Merge, ConEmu, Putty</p>
           </div>
           <div class="is-vcentered"> 
-            <img src="images/ui.png">
-            <p>Software Testing, Content Management and Customer Support</p>
+            <img src="files/ui.png">
+            <p>Software Testing, Quality Assurance and Customer Support</p>
           </div>
         </div>  
       </div>
     </div>
   </section>
-  <section class="work-experience is-relative h100vh bg-light" style="padding-bottom: 100px;">
-    <div style="background: url('images/experience.jpg') no-repeat center center; background-size: cover; height: 60vh;">   
+
+  <!-- work exp -->
+  <section class="work-experience is-relative h100vh">
+    <div  class="h60vh" style="background: url('files/experience.jpg') no-repeat center center; background-size: cover;">   
     </div>
-    <div class="overlay is-absolute bg-gradient w-100" style="height: 60vh;"></div>
+    <div class="photo-overlay is-absolute bg-gradient w-100 h60vh"></div>
     <div class="card is-absolute">
       <div class="container">
-        <h1 class="oswald">Work Experience</h1>
-        <h3 class="montserrat">Front-End Web Developer at MagisSolutions, Inc.</h3>
+        <h1 class="oswald pink-text">Work Experience</h1>
+        <h2 class="montserrat m-0">Front-End Web Developer at MagisSolutions, Inc.</h2>
         <h5 class="montserrat m-0" style="letter-spacing: .05rem">April 9, 2017 - January 31, 2020</h5>
-        <p>Responsible for developing on a range of projects, maintaining multiple websites, deploying to production, ensuring excellent website performance and cooperating with clients concerns and requests.</p>
+        <p>Responsible for developing on a range of projects, maintaining multiple websites, deploying to production, ensuring excellent website performance and cooperating with clients regarding their concerns and requests.</p>
         <div class="row w-100">
           <div class="column">
-            <h3 style="margin-top: 0px;">Web Development</h3>
+            <h4 class="montserrat m-0">Web Development</h4>
             <ul class="dev">
               <li>Develop and maintain the front-end functionality of websites.</li>
               <li>Work on multiple projects simultaneously to a high standard.</li>
@@ -119,7 +134,7 @@
               <li>Integrate dynamic content after front-end development.</li>
               <li>Construct and maintain website's database using MYSQL.</li>
               <li>Configure and perform deployment in Forge.</li>
-              <li>Optimizing website to improve page speed performance.</li>
+              <li>Optimize website to improve page speed performance.</li>
               <li>Write efficient, well-designed code and maintain software documentation.</li>
               <li>Develop websites that have a consistent feel and look throughout all web properties.</li>
               <li>Participate in code reviews with development team.</li>
@@ -127,15 +142,14 @@
             </ul>
           </div>
           <div class="column non-dev">
-            <h3 style="margin-top: 0px;">Customer Support</h3>
+            <h4 class="montserrat m-0">Customer Support</h4>
             <ul class="dev">
               <li>Meet with the clients to discuss the project requirements.</li>
-              <li>Communicate with clients then outlining their requests and encountered issues.</li> 
+              <li>Communicate with clients regarding their requests and encountered issues.</li> 
               <li>Provide coherent email updates and quickly relay solutions.</li>
               <li>Create user guide after web deployment.</li>
-              <li>Upload website content</li>
             </ul>
-            <h3 style="margin-top: 0px;">Software Testing</h3>
+            <h4 class="montserrat m-0">Software Testing</h4>
             <ul class="dev">
               <li>Conduct end to end testing.</li>
               <li>Perform the pre-launch checklist tasks.</li>
@@ -147,26 +161,28 @@
       </div>
     </div>
   </section>
+
+  <!-- portfolio -->
 <!--   <section class="portfolio bg-light w-100 h100vh">
     <div class="grid-container" style="width: 80%; margin: auto;">
       <div class="grid-item is-relative">
-        <img src="/images/banner-photo.jpg" alt="portfolio1" class="image">
+        <img src="/files/banner-photo.jpg" alt="portfolio1" class="image">
         <div class="overlay">
         </div>
       </div>
       <div class="grid-item is-relative">
-        <img src="/images/banner-photo.jpg" alt="portfolio1" class="image">
+        <img src="/files/banner-photo.jpg" alt="portfolio1" class="image">
         <div class="overlay">
 
         </div>
       </div>
       <div class="grid-item is-relative">
-        <img src="/images/banner-photo.jpg" alt="portfolio1" class="image">
+        <img src="/files/banner-photo.jpg" alt="portfolio1" class="image">
         <div class="overlay">
         </div>
       </div>
       <div class="grid-item is-relative">
-        <img src="/images/banner-photo.jpg" alt="portfolio1" class="image">
+        <img src="/files/banner-photo.jpg" alt="portfolio1" class="image">
         <div class="overlay">
         </div>
       </div>
@@ -177,41 +193,55 @@
     </div>
   </section> -->
 
-
-  <section class="reference is-relative bg-light h80vh">
-    <div class="grid-container h-100 is-relative">
-      <div class="grid-item h-100 is-relative">
-        <div class="h-100" style="background: url('images/reference.jpg') center center no-repeat; background-size: cover;">
-        </div>
-        <div class="overlay h-100 is-absolute bg-gradient w-100">
+  <!-- Character Reference -->
+  <section class="reference is-relative h100vh is-relative">
+    <div class="bg-image">
+      <div class="overlay h-100 is-absolute bg-gradient w-100"></div>
+      <div class="h-100"
+        style="background: url('files/reference.jpg') center center no-repeat; background-size: cover;"
+      >
+      </div>
+    </div>
+    <div class="grid-container h-80vh is-absolute" style="">
+      <div class="grid-item title w-100">
+        <div class="title-column">
+          <h1 class="oswald white-text">Character Reference</h1>
         </div>
       </div>
-      <div class="grid-item content h-100 is-vhcentered is-absolute">
-        <div class="card w-100">
+      <div class="grid-item w-100 is-vhcentered h-100">
+        <div class="card h-100 w-100">
           <div class="card-content text-center">
-            <h1 class="oswald">Contact Reference</h1>
-            <div class="d-flex"> 
-              <div class="column">
-                <img src="images/banner-photo.jpg">
-                <div>              
-                  <h3 class="montserrat purple-text">Ana Vasquez</h3>
-                  <p>Back-end Developer at MagisSolutions, Inc.</p>
-                  <p>
-                    <i class="fab fa-linkedin-in pink-text"></i> analinkedin
-                    <br>
-                    <i class="far fa-envelope pink-text"></i> heyitsana@gmail.com  
-                  </p>
-                </div>
+            <div class="column">
+              <img src="files/ana.jpg">
+              <div>              
+                <h3 class="montserrat purple-text">Ana Vasquez</h3>
+                <p>Co-worker at MagisSolutions, Inc. as Back-end Developer</p>
+                <br>
+                <p>
+                  <i class="fab fa-linkedin-in pink-text"></i> @msanavasquez
+                  <br>
+                  <i class="far fa-envelope pink-text"></i> helloanavee@gmail.com  
+                </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item w-100 is-vhcentered h-100">
+        <div class="card h-100 w-100">
+          <div class="card-content text-center">
+            <div class="d-flex">  
               <div class="column">
-                <img src="images/banner-photo.jpg">
+                <img src="files/cris.jpg">
                 <div>              
                   <h3 class="montserrat purple-text">Cris Anthony Barbosa</h3>
-                  <p>Back-end Developer at MagisSolutions, Inc.</p>
+                  <p>Software Engr at Rakuten</p>
+                  <p>Co-worker in MagisSolutions, Inc. as Mid Level Front-end Dev</p>
+                  <br>
                   <p>
-                    <i class="fab fa-linkedin-in pink-text"></i> analinkedin
+                    <i class="fab fa-linkedin-in pink-text"></i> @captain-barbosa
                     <br>
-                    <i class="far fa-envelope pink-text"></i> heyitsana@gmail.com  
+                    <i class="far fa-envelope pink-text"></i> crisanthonybarbosa@gmail.com   
                   </p>
                 </div>
               </div>
@@ -222,35 +252,44 @@
     </div>
   </section>
 
-
-  <section class="more-info is-vhcentered bg-light h100vh">
-    <div class="grid-container" style="width: 70%; margin: auto;">
+  <!-- More about me -->
+  <section class="more-info is-vhcentered h100vh">
+    <div class="grid-container">
       <div class="grid-item info-content">
-        <h1 class="oswald">Get to know me</h1>
-        <h4 class="m-0 purple-text">Educational Background</h4>
-        <p class="m-0">
-          Studied BSECE at Technological Institute of Philippines for 4years then transferred to Central Colleges of the Philippines where I graduated with the same course last 2015. 
+        <h1 class="oswald pink-text">Get to know me</h1>
+        <div>
+        <p>
+          Studied BSECE at Technological Institute of Philippines for 4years then transferred to Central Colleges of the Philippines where I graduated with the same course in 2015. 
+        </p>
+        </div>
+        <p>
+          A strong team player who is able to quickly learn and apply new technologies. I work well under pressure and can deliver reliable results.
         </p>
         <p>
-          Multitasker. Time Management. In the previous company I worked at, I was also the Admin Assistant. Also, aside from doing the current project, I have to do requests from previous ones. This taught the importance of time management, prioritizing and providing quality output on all ends.
-          <br><br>
-          Self-learner, Patience and Resourceful. A lot of things I've learned related to Web Development, I learned it by researching, trying, failing and trying again.
-          <br>
-          I like mornings. Waking up early in the morning and going for a run.
-
+          Practices good time management. I was an admin assistant while I trained in my early months in my previous company. Given that role and later on handled multiple projects as Developer, it taught me not only to multitasks, but do it effectively and productively.
+        </p> 
+        <p>
+          I am self-motivated and extremely driven.
         </p>
+        <p>I find solitude in running in the morning and enjoying the quiet late night with my laptop. Tea and music are my favorite workmates!</p> 
       </div>
       <div class="grid-item info-photo is-vcentered">
         <div class="is-relative image-holder">
-          <img class="main is-relative" src="images/ab1">
-          <img class="stripe is-absolute" src="images/ab2">
-          <img class="oval is-absolute" src="images/ab3">
+          <img class="main is-relative" src="files/ab1">
+          <img class="stripe is-absolute" src="files/ab2">
+          <img class="oval is-absolute" src="files/ab3">
         </div>
       </div>
     </div> 
     
   </section>
-  <footer class="bg-gradient" style="height: 5vh;">
+  <footer class="bg-gradient">
+    <div class="column h-100" style="">
+      <p class="m-0">
+       Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from www.flaticon.com.
+      </p>
+      <p class="m-0">© Designed and developed by ME ♡</p>
+    </div>
   </footer>
 </body>
 </html>

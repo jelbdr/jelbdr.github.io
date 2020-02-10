@@ -1,5 +1,22 @@
 @import url("normalize.css");
 
+:root {
+  --color-primary: #642B73;
+  --color-secondary: #C6426E;
+}
+
+.purple-text {
+  color: var(--color-primary);
+}
+
+.pink-text {
+    color: var(--color-secondary);
+}
+
+.white-text{
+    color: white;
+}
+
 .oswald {
     font-family: 'Oswald', sans-serif;
 }
@@ -12,16 +29,7 @@
     font-size: 2.5rem;
 }
 
-.purple-text {
-    color: #642B73;
-}
-
-.pink-text {
-    color: #C6426E;
-}
-
 h1.oswald {
-  color: #C6426E;
   text-transform: uppercase;
   margin-top: 0px; 
 }
@@ -29,7 +37,7 @@ h1.oswald {
 h2.typewriter {
     display: inline-block;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #642B73; /* The typwriter cursor */
+    border-right: .15em solid var(--color-primary); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -43,13 +51,11 @@ h3.montserrat {
     margin: 0px 0px 5px;
 }
 
-/* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 60% }
+    from { width: 0 }
+    to { width: calc(50% - 30px); }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
@@ -96,10 +102,11 @@ h3.montserrat {
 
 .h80vh {
     height: 80vh;
+}
 
-    @media only screen and (max-width: 780px) {
-        height: 100%;
-    }
+.h60vh {
+    height: 60vh;
+    top: 0%;
 }
 
 .d-none {
@@ -132,15 +139,14 @@ h3.montserrat {
 }
 
 .btn {
-    
     width: 200px;
     height: 45px;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     color: #fff;
-    border: 1px solid #642B73;
-    background-color: #642B73;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
@@ -152,6 +158,15 @@ h3.montserrat {
   box-shadow: 0px 15px 20px #d8d8d8;
   color: #000;
   transform: translateY(-5px);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background: #F6F6F6;
 }
 
 .grid-container {
@@ -180,11 +195,16 @@ h3.montserrat {
 }
 
 .reference .grid-container {
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 30% 35% 35%;
+  width: 80%;
+  left: 10%;
+  bottom: 20%;
 }
 
 .more-info .grid-container {
-  grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    width: 70%;
+    margin: auto;
 }
 
 .banner .text-content {
@@ -200,6 +220,8 @@ h3.montserrat {
 
 .about-me .progress p {
     margin: 0px 0px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .about-me .skills .is-vcentered {
@@ -208,7 +230,7 @@ h3.montserrat {
 
 .work-experience .card {
     width: 80%;
-    top: 10%;
+    top: 8%;
     margin: auto;
     right: 10%;
 }
@@ -226,24 +248,46 @@ h3.montserrat {
 }
 
 .reference img {
-    height: 65px;
-    margin: 10px 0px 15px;
-    width: 65px;
+    height: 120px;
+    margin: 10px 0px 20px;
+    width: 120px;
     border-radius: 50%;
 }
 
+.reference .card {
+    width: 90%;
+}
+
+.reference .title-column {
+    padding: 0px 30px 30px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
 .reference p {
-    /*font-size: 14px;*/
      margin: 5px 0px;
 }
 
-.reference .column {
-    padding: 10px 15px 0px;
+.reference .title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.reference .bg-image {
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .reference .content {
     right: 10%;
     width: 50%;
+}
+
+.reference .card-content {
+    padding: 60px 40px;
 }
 
 .more-info .image-holder {
@@ -268,6 +312,56 @@ h3.montserrat {
     height: 300px;
 }
 
+.more-info p {
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-left: 3px solid var(--color-secondary);
+    background: white;
+}
+
+.more-info p:hover {
+    border-left: 3px solid var(--color-primary);
+}
+
+footer {
+    height: 5vh;
+}
+
+footer .column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+footer p {
+    font-size: 13px;
+    color: white;
+}
+
+@media only screen and (max-width: 2560px) {
+    @keyframes typing {
+      from { width: 0 }
+      to { width: calc(40% - 30px); }
+    }
+}
+
+
+@media only screen and (max-width: 1600px) and (min-width: 1400px) {
+    @keyframes typing {
+      from { width: 0 }
+      to { width: calc(50% - 30px); }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    @keyframes typing {
+        from { width: 0 }
+        to { width: calc(60% - 30px); }
+    }
+}
+
+
 @media only screen and (max-width: 780px) {
     .banner .grid-container {
         grid-template-columns: 0% 100% 100%;
@@ -286,8 +380,18 @@ h3.montserrat {
     }
 
     .banner .text-content {
-        padding: 0px 50px;
-    }   
+        padding: 0px 30px;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange; }
+    }
 
         /* Safari 6.1+ */
     div.skills   {-webkit-order: 3;}
@@ -298,6 +402,10 @@ h3.montserrat {
     div.skills   {order: 3;}
     div.progress  {order: 2;}
     div.description {order: 1;}
+    
+    .about-me {
+        height: 100%;
+    }
 
     .about-me .grid-container {
       grid-template-columns: none;
@@ -319,10 +427,14 @@ h3.montserrat {
     .about-me .skills .is-vcentered {
         margin: auto;
     }
+    
+    .work-experience.h100vh {
+        height: 1000px;
+    }
 
     .work-experience .card {
         width: 90%;
-        top: auto;
+        top: 5%;
         margin: auto;
         right: 5%;
     }
@@ -333,6 +445,10 @@ h3.montserrat {
 
     .work-experience .row {
         display: block;
+    }
+
+    .work-experience .column  {
+        width: 100%;
     }
 
     .portfolio {
@@ -349,23 +465,45 @@ h3.montserrat {
     }
     
     .reference .grid-container {
-        grid-template-columns: 0% 100%;
-    }
-
-    .reference .d-flex {
-        display: block;
-    }
-
-    .reference .content  {
+        grid-template-columns: none;
         position: relative;
         width: 90%;
-        margin: auto;
-        right: 0%
+        bottom: 0%;
+        left: 5%;
+    }
+
+    .reference .bg-image {
+        height: 100%;
+    }
+
+    .reference .title-column {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .reference .card-content {
+        padding: 30px 20px;
+    }
+
+    .reference img {
+        height: 60px;
+        width: 60px;
+        margin: 0px;
+    }
+
+    .reference p {
+        font-size: 14px;
+    }
+
+    .reference h1 {
+        margin: 30px 0px;
     }
 
     .more-info .grid-container {
       grid-template-columns: 100% 100%;
       display: block;
+      width: 80%;
     }
     
     .more-info {
@@ -392,11 +530,66 @@ h3.montserrat {
         height: 100%;
        margin: 20px 0px;
     }
+
+    .more-info h1 {
+        text-align: center;
+    }
     
     .more-info img.oval {
         left: 1%;
         top: 13%;
         height: 200px;
+    }
+
+    .h80vh, .h60vh {
+        height: 100vh;
+    }
+
+    footer .column {
+        display: block;
+        text-align: center;
+        padding: 3px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .work-experience.h100vh {
+        height: 1200px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .work-experience.h100vh {
+        height: 1300px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .reference .card {
+        margin-top: 100px 0px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .banner .text-content {
+        padding: 0px 10px;
+    }  
+    
+    .banner .content-column {
+        width: 100%;
+        left: 0%;
+    }
+
+    .work-experience.h100vh {
+        height: 1500px;
+    }
+
+    .reference .card-content {
+        padding: 25px;
+    }
+
+    .more-info {
+        margin-top: 50px;
     }
 }
 
@@ -415,7 +608,7 @@ ul.links {
 
 .icon {
     margin-right: 5px;
-    padding: 5px 10px;
+    padding: 8px 15px;
     font-size: 14px;
     border-radius: 50%;
     color: #fff;
@@ -428,13 +621,12 @@ ul.links {
 
 
 .skills img {
-    height: 50px;
+    height: 60px;
     margin-right: 10px;
 }
 
-
 .skills p {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .card {
@@ -468,7 +660,7 @@ ul.links {
   left: 0;
   right: 0;
   background: -webkit-linear-gradient(150deg, #C6426E, #642B73);
-  opacity: 75%;
+  opacity: 90%;
   overflow: hidden;
   width: 100%;
   height:100%;
@@ -481,13 +673,11 @@ ul.links {
 }
 
 progress[value] {
-  /* Reset the default appearance */
   -webkit-appearance: none;
    appearance: none;
-
   width: 300px;
   height: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 progress[value]::-webkit-progress-bar {
